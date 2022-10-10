@@ -1,4 +1,6 @@
 import re
+import turtle
+
 print('\n\nСмайлик:')
 print('*','','','*','','','','','','','','','','*','*','','','','*')
 print('','*','*','','','','','','','','','','','*','','','','','','','*')
@@ -6,6 +8,31 @@ print('','','*','','','*','*','*','','*','*','','','','','','','','*')
 print('','*','*','','','','','','','','','','','*','','','','','','','','','*')
 print('*','','','*','','','','','','','','','','*','*','','','','','','','','*')
 
+turtle.right(60)
+turtle.forward(100)
+turtle.left(180)
+turtle.forward(50)
+turtle.left(120)
+turtle.forward(50)
+turtle.left(180)
+turtle.forward(100)
+turtle.left(180)
+turtle.forward(50)
+turtle.left(120)
+turtle.forward(50)
+turtle.right(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(20)
+turtle.left(180)
+turtle.forward(20)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(20)
+turtle.right(60)
+turtle.forward(120)
+turtle.exitonclick()
 
 test_1 = 'dfsffX-{\ehfhfefhefhhhuhhefhuehfheX-{\deffefX-}'
 test_2 = 'dfsffX-{\ehfhfefhefhhhuhhefhuX-{\X-{\X-{\X-{\X-{\X-{\ehfheX-{\deffefX-}'
@@ -42,8 +69,6 @@ test_10 ='ВТ – загадка ИТМО'
 print('\nСтрока:',test_10)
 print('Ответ:',re.findall(r"(ВТ{1}[\s[\w\–]{0,}]{0,4}\sИТМО)", test_10))
 
-
-
 def cgange(st):
     s=''
     MATH = []
@@ -58,7 +83,6 @@ def cgange(st):
         DATA[i] = 3*DATA[i]**2+5
         s = s + str(DATA[i]) + MATH[i]
     return s
-
 
 test_11 = '20 + 22 = 42'
 test_12 = '222 + 333 = 555'
